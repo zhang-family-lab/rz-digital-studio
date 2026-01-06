@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap');
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.section-spacing {
+  padding: 60px 24px;
+}
+
+.work-card:hover img {
+  transform: scale(1.05);
+}
+
+.work-card img {
+  transition: transform 0.3s ease;
+}
+
+.premium-glow {
+  border: 2px solid #6366f1;
+  box-shadow: 0 0 20px rgba(99, 102, 241, 0.1);
+}
+
+.step-number {
+  font-size: 0.75rem;
+  font-weight: 800;
+  background: #6366f1;
+  color: white;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-bottom: 0.75rem;
+}
