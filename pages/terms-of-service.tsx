@@ -21,11 +21,6 @@ export default function TermsOfService() {
       </section>
 
       <section className="mb-6">
-        <h2 className="text-2xl font-semibold mb-4">3. Revisions</h2>
-        <p>We offer up to 3 free revisions per project to ensure client satisfaction. Additional revisions beyond the initial 3 may incur extra charges, which will be discussed and agreed upon in advance.</p>
-      </section>
-
-      <section className="mb-6">
         <h2 className="text-2xl font-semibold mb-4">4. Payment</h2>
         <p>Payment terms will be outlined in the project agreement. Invoices are due within 30 days unless otherwise specified.</p>
       </section>

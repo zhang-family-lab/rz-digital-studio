@@ -2,7 +2,7 @@ export default function HowItWorks() {
   return (
     <section id="how-it-works" className="bg-slate-50 section-spacing">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl font-extrabold text-center mb-12 tracking-tight">The 48-Hour Delivery Process</h2>
+        <h2 className="text-3xl font-extrabold text-center mb-12 tracking-tight">The 3-5 Days Delivery Process</h2>
         <div className="grid md:grid-cols-4 gap-8">
           <div className="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
             <div className="step-circle">1</div>
