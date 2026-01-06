@@ -1,38 +1,29 @@
 export default function HowItWorks() {
   return (
-    <section id="how-it-works" className="max-w-6xl mx-auto section-spacing border-t border-slate-100">
-      <div className="text-center mb-12">
-        <h2 className="text-3xl font-extrabold tracking-tight mb-4">A Streamlined Process</h2>
-        <p className="text-slate-500 italic text-sm">Efficient. Transparent. Professional.</p>
-      </div>
-      <div className="grid md:grid-cols-4 gap-6">
-        <div className="p-6 bg-slate-50 rounded-3xl border border-slate-100 relative">
-          <div className="step-number">1</div>
-          <h4 className="font-bold mb-2">Project Request</h4>
-          <p className="text-xs text-slate-500 leading-relaxed">
-            Fill out a simple Google Form with your goals. No upfront meeting needed.
-          </p>
-        </div>
-        <div className="p-6 bg-slate-50 rounded-3xl border border-slate-100 relative">
-          <div className="step-number">2</div>
-          <h4 className="font-bold mb-2">Visual Demo</h4>
-          <p className="text-xs text-slate-500 leading-relaxed">
-            I create a visual demo or screenshots within 48h. See the product before paying a cent.
-          </p>
-        </div>
-        <div className="p-6 bg-indigo-50 rounded-3xl border border-indigo-100 relative">
-          <div className="step-number">3</div>
-          <h4 className="font-bold mb-2">Deposit & Build</h4>
-          <p className="text-xs text-slate-500 leading-relaxed">
-            Pay <strong>50% deposit</strong> to start the full build. I handle all technical setup.
-          </p>
-        </div>
-        <div className="p-6 bg-slate-50 rounded-3xl border border-slate-100 relative">
-          <div className="step-number">4</div>
-          <h4 className="font-bold mb-2">Go Live</h4>
-          <p className="text-xs text-slate-500 leading-relaxed">
-            Pay the <strong>final 50%</strong>. I launch your site and provide ongoing support.
-          </p>
+    <section id="how-it-works" className="bg-slate-50 section-spacing">
+      <div className="max-w-6xl mx-auto">
+        <h2 className="text-3xl font-extrabold text-center mb-12 tracking-tight">The 48-Hour Delivery Process</h2>
+        <div className="grid md:grid-cols-4 gap-8">
+          <div className="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
+            <div className="step-circle">1</div>
+            <h4 className="font-bold mb-2">Request</h4>
+            <p className="text-xs text-slate-500 leading-relaxed">Fill out my structured form with your awards, projects, and personal brand goals.</p>
+          </div>
+          <div className="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
+            <div className="step-circle">2</div>
+            <h4 className="font-bold mb-2">Demo Draft</h4>
+            <p className="text-xs text-slate-500 leading-relaxed">I'll create a custom visual demo of your site. No generic templates—designed for your profile.</p>
+          </div>
+          <div className="bg-indigo-600 p-6 rounded-2xl shadow-lg text-white">
+            <div className="step-circle bg-white text-indigo-600">3</div>
+            <h4 className="font-bold mb-2">Deposit</h4>
+            <p className="text-xs text-indigo-100 leading-relaxed">Pay a 50% deposit to secure your slot. I'll finish the build and optimize for mobile/desktop.</p>
+          </div>
+          <div className="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
+            <div className="step-circle">4</div>
+            <h4 className="font-bold mb-2">Launch</h4>
+            <p className="text-xs text-slate-500 leading-relaxed">Pay the final 50%. We go live with your custom domain. Ready for your applications.</p>
+          </div>
         </div>
       </div>
     </section>

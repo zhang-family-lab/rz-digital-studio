@@ -1,33 +1,26 @@
 export default function Portfolio() {
   return (
-    <section id="work" className="max-w-6xl mx-auto section-spacing border-t border-slate-100">
-      <div className="flex justify-between items-end mb-10">
-        <h2 className="text-3xl font-extrabold tracking-tight">Recent Work</h2>
-        <p className="text-slate-400 text-sm hidden sm:block italic font-medium">Quality you can trust</p>
-      </div>
-      <div className="grid md:grid-cols-2 gap-8">
-        <a href="https://www.rogerzhang.me/" target="_blank" className="work-card group block">
-          <div className="overflow-hidden rounded-2xl bg-slate-100 aspect-video mb-4 flex items-center justify-center relative shadow-sm border border-slate-100">
-            <img
-              src="https://api.microlink.io/?url=https://www.rogerzhang.me/&screenshot=true&meta=false&embed=screenshot.url"
-              alt="Roger Zhang Portfolio"
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-all flex items-center justify-center">
-              <span className="opacity-0 group-hover:opacity-100 bg-white text-slate-900 px-6 py-2 rounded-full font-bold shadow-xl transition-all text-sm border border-slate-100">
-                Visit Site →
-              </span>
+    <section className="max-w-6xl mx-auto section-spacing">
+      <div className="flex flex-col md:flex-row items-center gap-12">
+        <div className="flex-1">
+          <h2 className="text-4xl font-extrabold tracking-tight mb-6">Designed for <span className="italic font-serif">Impact</span>.</h2>
+          <p className="text-slate-500 mb-6 leading-relaxed text-sm">
+            Admission officers spend less than 10 minutes on an application. A professional website ensures they immediately see your technical depth and leadership potential.
+          </p>
+          <ul className="space-y-3 mb-8">
+            <li className="flex items-center text-sm font-semibold"><i className="fas fa-check text-indigo-500 mr-2"></i> Custom Domain (name.me)</li>
+            <li className="flex items-center text-sm font-semibold"><i className="fas fa-check text-indigo-500 mr-2"></i> Mobile-First Responsive Design</li>
+            <li className="flex items-center text-sm font-semibold"><i className="fas fa-check text-indigo-500 mr-2"></i> Interactive Project Showcases</li>
+          </ul>
+        </div>
+        <div className="flex-1 w-full">
+          <div className="rounded-2xl overflow-hidden shadow-2xl border border-slate-100 portfolio-card">
+            <img src="https://api.microlink.io/?url=https://www.rogerzhang.me/&screenshot=true&meta=false&embed=screenshot.url" alt="Example Portfolio" className="w-full h-auto" />
+            <div className="p-4 bg-white flex justify-between items-center">
+              <span className="text-xs font-bold text-slate-400">DEMO: ROGERZHANG.ME</span>
+              <a href="https://www.rogerzhang.me/" target="_blank" className="text-indigo-600 font-bold text-xs">View Live →</a>
             </div>
           </div>
-          <h4 className="text-xl font-bold">Roger's Academic Portfolio</h4>
-          <p className="text-slate-500 text-sm mb-2">A high-end showcase of technical projects and academic excellence.</p>
-        </a>
-        <div className="work-card group border border-dashed border-slate-200 rounded-2xl p-4 flex flex-col justify-center text-center">
-          <div className="overflow-hidden rounded-xl bg-slate-50 aspect-video mb-4 flex items-center justify-center border border-slate-100 italic text-slate-300">
-            Your Site Next
-          </div>
-          <h4 className="text-xl font-bold text-slate-400 italic">Future Partner</h4>
-          <p className="text-slate-400 text-sm mb-2 italic">Optimized for speed and conversion.</p>
         </div>
       </div>
     </section>

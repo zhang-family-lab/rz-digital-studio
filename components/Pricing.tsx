@@ -1,120 +1,26 @@
 export default function Pricing() {
   return (
-    <section id="pricing" className="max-w-6xl mx-auto section-spacing text-center">
-      <h2 className="text-4xl font-extrabold mb-4 tracking-tight text-slate-900">Simple & Transparent Pricing</h2>
-      <p className="text-slate-500 mb-12">No hidden fees. Professional results.</p>
+    <section id="pricing" className="bg-slate-900 text-white section-spacing">
+      <div className="max-w-4xl mx-auto text-center">
+        <h2 className="text-3xl font-extrabold mb-4 tracking-tight">Investment for Your Future</h2>
+        <p className="text-slate-400 mb-12 text-sm">One clear package. Professional management.</p>
 
-      <div className="grid md:grid-cols-3 gap-6 mb-16">
-        {/* Student Pricing */}
-        <div className="border border-slate-200 p-8 rounded-3xl text-left hover:border-purple-200 transition bg-white shadow-sm flex flex-col">
-          <div className="mb-4">
-            <span className="text-xs font-bold uppercase tracking-widest text-purple-600 bg-purple-50 px-2 py-1 rounded">
-              Admissions Edge
-            </span>
-          </div>
-          <h4 className="font-bold text-xl mb-2">Student Portfolio</h4>
-          <div className="text-3xl font-extrabold mb-2 text-slate-900">
-            $299 <span className="text-base text-slate-400 font-normal italic">setup</span>
-          </div>
-          <div className="text-slate-500 font-bold mb-6 italic text-sm">All-inclusive: $29/mo</div>
-          <ul className="text-sm text-slate-500 space-y-4 flex-grow">
-            <li className="flex items-start">
-              <i className="fas fa-check-circle text-purple-500 mt-1 mr-2"></i> <strong>Domain & Hosting Included</strong>
-            </li>
-            <li className="flex items-start">
-              <i className="fas fa-check-circle text-purple-500 mt-1 mr-2"></i> Award & Project Gallery
-            </li>
-            <li className="flex items-start">
-              <i className="fas fa-check-circle text-purple-500 mt-1 mr-2"></i> Content updates as you grow
-            </li>
+        <div className="bg-white text-slate-900 p-8 md:p-12 rounded-[2rem] shadow-2xl relative overflow-hidden text-left max-w-lg mx-auto">
+          <div className="absolute top-0 right-0 bg-indigo-600 text-white px-4 py-1 text-[10px] font-bold uppercase tracking-widest">Premium Choice</div>
+          <h4 className="text-2xl font-extrabold mb-2">Student Elite Portfolio</h4>
+          <div className="text-4xl font-black mb-1">$299 <span className="text-sm text-slate-400 font-normal italic">One-time setup</span></div>
+          <p className="text-indigo-600 font-bold text-sm mb-8 italic">Including $29/mo all-inclusive hosting & updates</p>
+
+          <ul className="space-y-4 mb-10">
+            <li className="flex items-start text-sm"><i className="fas fa-certificate text-indigo-500 mt-1 mr-3"></i> <span><strong>Custom Domain</strong> included (e.g., yourname.com)</span></li>
+            <li className="flex items-start text-sm"><i className="fas fa-certificate text-indigo-500 mt-1 mr-3"></i> <span>Dynamic Resume & Project Boards</span></li>
+            <li className="flex items-start text-sm"><i className="fas fa-certificate text-indigo-500 mt-1 mr-3"></i> <span>SEO optimization for admission namesakes</span></li>
+            <li className="flex items-start text-sm"><i className="fas fa-certificate text-indigo-500 mt-1 mr-3"></i> <span>Unlimited content updates every semester</span></li>
           </ul>
-          <a
-            href="https://forms.google.com/your-form-id"
-            className="mt-8 block text-center py-3 bg-purple-600 text-white rounded-full font-bold hover:bg-purple-700 transition"
-          >
-            Apply Now
-          </a>
-        </div>
 
-        {/* Business Standard */}
-        <div className="border border-slate-200 p-8 rounded-3xl text-left hover:border-indigo-200 transition bg-white shadow-sm flex flex-col">
-          <div className="mb-4">
-            <span className="text-xs font-bold uppercase tracking-widest text-indigo-600 bg-indigo-50 px-2 py-1 rounded">
-              Most Popular
-            </span>
-          </div>
-          <h4 className="font-bold text-xl mb-2">Business Growth</h4>
-          <div className="text-3xl font-extrabold mb-2 text-slate-900">
-            $499 <span className="text-base text-slate-400 font-normal italic">setup</span>
-          </div>
-          <div className="text-indigo-600 font-bold mb-6 italic text-sm">All-inclusive: $49/mo</div>
-          <ul className="text-sm text-slate-500 space-y-4 flex-grow">
-            <li className="flex items-start">
-              <i className="fas fa-check-circle text-indigo-500 mt-1 mr-2"></i> <strong>Domain & Ultra-fast Hosting</strong>
-            </li>
-            <li className="flex items-start">
-              <i className="fas fa-check-circle text-indigo-500 mt-1 mr-2"></i> Google Maps & Local SEO
-            </li>
-            <li className="flex items-start">
-              <i className="fas fa-check-circle text-indigo-500 mt-1 mr-2"></i> 24/7 Security & Maintenance
-            </li>
-          </ul>
-          <a
-            href="https://forms.google.com/your-form-id"
-            className="mt-8 block text-center py-3 bg-indigo-600 text-white rounded-full font-bold hover:bg-indigo-700 transition"
-          >
-            Apply Now
-          </a>
+          <a href="/request" id="request" className="block w-full text-center bg-slate-900 text-white py-4 rounded-xl font-bold hover:bg-slate-800 transition">Start My Request</a>
+          <p className="text-[10px] text-slate-400 text-center mt-4 uppercase font-bold tracking-tighter">No payment required until you approve the demo.</p>
         </div>
-
-        {/* Business Elite */}
-        <div className="premium-glow p-8 rounded-3xl text-left transition bg-white shadow-xl flex flex-col relative border-2 border-indigo-600">
-          <div className="mb-4">
-            <span className="text-xs font-bold uppercase tracking-widest text-white bg-indigo-600 px-2 py-1 rounded">
-              Elite AI Assistant
-            </span>
-          </div>
-          <h4 className="font-bold text-xl mb-2">Elite Business AI</h4>
-          <div className="text-3xl font-extrabold mb-2 text-slate-900">
-            $1,299 <span className="text-base text-slate-400 font-normal italic">setup</span>
-          </div>
-          <div className="text-indigo-600 font-bold mb-6 italic text-sm">All-inclusive: $99/mo</div>
-          <ul className="text-sm text-slate-500 space-y-4 flex-grow">
-            <li className="flex items-start">
-              <i className="fas fa-star text-amber-500 mt-1 mr-2"></i> <strong>Everything in Business Plan</strong>
-            </li>
-            <li className="flex items-start">
-              <i className="fas fa-star text-amber-500 mt-1 mr-2"></i> <strong>Full AI Booking Bot</strong>
-            </li>
-            <li className="flex items-start">
-              <i className="fas fa-check-circle text-indigo-500 mt-1 mr-2"></i> Advanced Competitor SEO
-            </li>
-            <li className="flex items-start">
-              <i className="fas fa-check-circle text-indigo-500 mt-1 mr-2"></i> Priority tech support
-            </li>
-          </ul>
-          <a
-            href="https://forms.google.com/your-form-id"
-            className="mt-8 block text-center py-3 bg-slate-900 text-white rounded-full font-bold hover:bg-slate-800 transition"
-          >
-            Apply Now
-          </a>
-        </div>
-      </div>
-
-      {/* CTA Section */}
-      <div className="bg-slate-900 text-white p-12 rounded-3xl text-center">
-        <h4 className="text-3xl font-bold mb-4 italic">Ready to build your digital future?</h4>
-        <p className="text-slate-400 mb-8 max-w-xl mx-auto italic text-sm">
-          Our "All-inclusive" monthly subscription covers high-speed hosting, domain renewal, SSL security, and unlimited technical support. You focus on your business, I handle the tech.
-        </p>
-        <a
-          href="https://forms.google.com/your-form-id"
-          target="_blank"
-          className="inline-block bg-white text-slate-900 px-12 py-4 rounded-full font-extrabold hover:bg-slate-100 transition shadow-xl text-lg tracking-tight"
-        >
-          START MY REQUEST →
-        </a>
       </div>
     </section>
   );

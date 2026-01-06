@@ -34,3 +34,9 @@ body {
   border-radius: 50%;
   margin-bottom: 0.75rem;
 }
+
+.step-circle { width: 32px; height: 32px; background: #4f46e5; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 0.8rem; margin-bottom: 1rem; }
+
+.portfolio-card:hover img { transform: translateY(-5px); }
+
+.portfolio-card img { transition: transform 0.3s ease; }

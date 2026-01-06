@@ -5,7 +5,7 @@ export default function Document() {
     <Html lang="en">
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Web Design & AI Services | RZ Digital Studio</title>
+        <title>Elite Student Portfolios | RZ Digital Studio</title>
         <script src="https://cdn.tailwindcss.com"></script>
         <link
           rel="stylesheet"
