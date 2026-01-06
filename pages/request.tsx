@@ -46,6 +46,19 @@ export default function Request() {
           </select>
         </div>
 
+        <div>
+          <label className="block text-sm font-medium mb-2">Preferred Package</label>
+          <select
+            name="package"
+            className="w-full p-3 border border-slate-300 rounded-lg"
+            required
+          >
+            <option value="">Select</option>
+            <option value="elite">Student Elite Portfolio ($299 + $29/mo)</option>
+            <option value="pro">Student Pro Portfolio ($499 + $49/mo)</option>
+          </select>
+        </div>
+
         <button
           type="submit"
           className="w-full bg-indigo-600 text-white py-3 rounded-lg font-bold hover:bg-indigo-700"
