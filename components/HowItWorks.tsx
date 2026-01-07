@@ -16,13 +16,13 @@ export default function HowItWorks() {
           </div>
           <div className="bg-indigo-600 p-6 rounded-2xl shadow-lg text-white">
             <div className="step-circle bg-white text-indigo-600">3</div>
-            <h4 className="font-bold mb-2">Deposit</h4>
-            <p className="text-xs text-indigo-100 leading-relaxed">Pay a 50% deposit to secure your slot. I'll finish the build and optimize for mobile/desktop.</p>
+            <h4 className="font-bold mb-2">Payment</h4>
+            <p className="text-xs text-indigo-100 leading-relaxed">Pay the full amount securely online to proceed. I'll finish the build and optimize for mobile/desktop.</p>
           </div>
           <div className="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
             <div className="step-circle">4</div>
             <h4 className="font-bold mb-2">Launch</h4>
-            <p className="text-xs text-slate-500 leading-relaxed">Pay the final 50%. We go live with your custom domain. Ready for your applications.</p>
+            <p className="text-xs text-slate-500 leading-relaxed">We go live with your custom domain. Ready for your applications.</p>
           </div>
         </div>
       </div>
