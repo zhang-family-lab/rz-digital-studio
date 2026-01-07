@@ -8,6 +8,7 @@ import { remark } from 'remark';
 import html from 'remark-html';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
+import SeoHead from '../../components/SeoHead';
 
 export async function getStaticPaths() {
   const blogsDirectory = path.join(process.cwd(), 'public', 'blogs');
@@ -55,11 +56,13 @@ export default function BlogPost({ blog }: { blog: BlogPost }) {
 
   return (
     <div>
+      <SeoHead 
+        title={`${blog.title} | RZ Digital Studio`}
+        description={blog.excerpt || `Read ${blog.title} by ${blog.author || 'RZ Digital Studio'} - Insights on building an elite student portfolio.`}
+        ogType="article"
+      />
       <Header />
       <div className="max-w-4xl mx-auto px-4 py-8">
-        <Head>
-          <title>{blog.title} - RZ Digital Studio</title>
-        </Head>
         <Link href="/blogs" className="text-indigo-600 hover:underline mb-8 inline-block font-medium">← Back to Blogs</Link>
         <article>
           <h1 className="text-4xl font-extrabold mb-4 tracking-tight">{blog.title}</h1>

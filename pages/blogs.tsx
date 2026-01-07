@@ -1,10 +1,10 @@
-import Head from 'next/head';
 import Link from 'next/link';
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import SeoHead from '../components/SeoHead';
 
 export async function getStaticProps() {
   const blogsDirectory = path.join(process.cwd(), 'public', 'blogs');
@@ -48,6 +48,11 @@ interface Blog {
 export default function Blogs({ blogs }: { blogs: Blog[] }) {
   return (
     <div className="flex flex-col min-h-screen bg-slate-50">
+      <SeoHead 
+        title="College Application Strategy Blogs | RZ Digital Studio"
+        description="Read our latest insights on how to build a digital portfolio for Ivy League admissions. Expert advice on personal branding for high school students."
+        canonicalUrl="https://rz-digital-studio.vercel.app/blogs"
+      />
       <Header />
       
       <main className="flex-grow">
@@ -63,9 +68,6 @@ export default function Blogs({ blogs }: { blogs: Blog[] }) {
         </section>
 
         <section className="max-w-6xl mx-auto px-4 py-16">
-          <Head>
-            <title>Blogs - RZ Digital Studio</title>
-          </Head>
           
           <div className="grid md:grid-cols-2 gap-8">
             {blogs.map((blog) => (

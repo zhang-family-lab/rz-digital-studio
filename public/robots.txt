@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://rz-digital-studio.vercel.app/sitemap.xml
