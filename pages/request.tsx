@@ -10,7 +10,7 @@ export default function Request() {
       <h1 className="text-3xl font-bold mb-6">Request Your Portfolio Demo</h1>
       <p className="mb-8">Fill out this quick form on Google Forms to complete your portfolio request. We'll use the information to create a live demo of your personalized student portfolio in 3-5 days. No interview needed!</p>
 
-      <div className="flex justify-center">
+      <div className="flex flex-col items-center gap-6">
         <a 
           href="https://forms.gle/2mqdqnjdkSvikpRAA" 
           target="_blank" 
@@ -23,6 +23,13 @@ export default function Request() {
             <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
           </svg>
         </a>
+
+        <div className="text-center mt-4">
+          <p className="text-slate-500 mb-2">Prefer email?</p>
+          <a href="mailto:roger.zhangruizhe@gmail.com" className="text-indigo-600 font-bold hover:underline underline-offset-4">
+            roger.zhangruizhe@gmail.com
+          </a>
+        </div>
       </div>
     </div>
   );

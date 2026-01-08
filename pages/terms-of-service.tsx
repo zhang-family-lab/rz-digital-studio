@@ -71,7 +71,7 @@ export default function TermsOfService() {
           </ul>
 
            <h3 className="text-xl font-semibold mb-2 text-slate-900">Contact Us</h3>
-          <p>If you have any questions about these Terms or our Privacy Policy, please contact us at: support@rz-digital-studio.vercel.app</p>
+          <p>If you have any questions about these Terms or our Privacy Policy, please contact us at: roger.zhangruizhe@gmail.com</p>
         </section>
       </div>
     </div>

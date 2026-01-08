@@ -7,6 +7,7 @@ interface SeoProps {
   canonicalUrl?: string;
   ogType?: string;
   ogImage?: string;
+  noIndex?: boolean;
 }
 
 export default function SeoHead({ 
@@ -14,7 +15,8 @@ export default function SeoHead({
   description = "Stand out in Ivy League admissions with a custom-coded personal website. We build digital portfolios for high school students to showcase research, art, and leadership.",
   canonicalUrl,
   ogType = "website",
-  ogImage = "/og-image.jpg" // You should add an image to your public folder
+  ogImage = "/og-image.jpg", // You should add an image to your public folder
+  noIndex = false
 }: SeoProps) {
   const router = useRouter();
   const siteUrl = "https://rz-digital-studio.vercel.app";
@@ -26,6 +28,9 @@ export default function SeoHead({
       <meta name="description" content={description} />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <link rel="canonical" href={currentUrl} />
+
+      {/* Robot Control */}
+      {noIndex && <meta name="robots" content="noindex, nofollow" />}
 
       {/* Open Graph / Facebook */}
       <meta property="og:type" content={ogType} />
