@@ -55,7 +55,7 @@ Click [RZ Digital Studio](https://rz-digital-studio.vercel.app) now to contact R
 
 Hello everyone, I am Roger, the founder of RZ Digital Studio, and currently a high school student (Junior).
 
-Actually, it wasn't until a few weeks ago that I started building my own personal website [rogerzhang.me](https://rogerzhang.me). But in the process of building it, I was deeply shocked: it turned out that not only the code but every layout and every paragraph of text were speaking for me. I realized that **a well-designed webpage can display a person's passion and potential more three-dimensionally than any PDF resume.**
+Actually, it wasn't until a few weeks ago that I started building my own personal website. But in the process of building it, I was deeply shocked: it turned out that not only the code but every layout and every paragraph of text were speaking for me. I realized that **a well-designed webpage can display a person's passion and potential more three-dimensionally than any PDF resume.**
 
 The original intention of making this website is simple: I don't want you to take the detours I took; I hope more peers can also possess the "bonus" I experienced.
 
@@ -113,6 +113,6 @@ Common App 的空间极其有限。在个人网站上，学生可以自由布局
 
 大家好，我是 Roger，也是 RZ Digital Studio 的创始人，目前还是一名高中生（Junior）。
 
-其实，直到几个星期前，我才开始搭建属于自己的个人网站 [rogerzhang.me](https://rogerzhang.me)。但在搭建的过程中，我被深深震撼了：原来不仅是代码，每一个排版、每一段文字都在替我说话。我意识到，**一个精心设计的网页，比任何 PDF 简历都更能立体地展示一个人的热情与潜力。**
+其实，直到几个星期前，我才开始搭建属于自己的个人网站。但在搭建的过程中，我被深深震撼了：原来不仅是代码，每一个排版、每一段文字都在替我说话。我意识到，**一个精心设计的网页，比任何 PDF 简历都更能立体地展示一个人的热情与潜力。**
 
 做这个网站的初衷很简单：我走过的弯路，不希望你们再走；我体会到的“红利”，希望更多同龄人也能拥有。

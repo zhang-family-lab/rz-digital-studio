@@ -15,10 +15,10 @@ export default function Portfolio() {
         </div>
         <div className="flex-1 w-full">
           <div className="rounded-2xl overflow-hidden shadow-2xl border border-slate-100 portfolio-card">
-            <img src="https://api.microlink.io/?url=https://www.rogerzhang.me/&screenshot=true&meta=false&embed=screenshot.url" alt="Example Portfolio" className="w-full h-auto" />
+            <img src="https://api.microlink.io/?url=https://student-showcase-001.vercel.app/&screenshot=true&meta=false&embed=screenshot.url" alt="Example Portfolio" className="w-full h-auto" />
             <div className="p-4 bg-white flex justify-between items-center">
-              <span className="text-xs font-bold text-slate-400">DEMO: ROGERZHANG.ME</span>
-              <a href="https://www.rogerzhang.me/" target="_blank" className="text-indigo-600 font-bold text-xs">View Live →</a>
+              <span className="text-xs font-bold text-slate-400">DEMO: STUDENT SHOWCASE</span>
+              <a href="https://student-showcase-001.vercel.app/" target="_blank" className="text-indigo-600 font-bold text-xs">View Live →</a>
             </div>
           </div>
         </div>
