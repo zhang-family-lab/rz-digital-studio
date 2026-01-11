@@ -9,17 +9,17 @@ export default function Pricing() {
 
   const handleCheckout = async (packageType: 'elite' | 'pro') => {
     setLoading(true);
-    
+
     // Get correct price IDs based on package
-    const prices = packageType === 'elite' 
+    const prices = packageType === 'elite'
       ? {
-          setupId: process.env.NEXT_PUBLIC_PRICE_ID_ELITE_SETUP,
-          subscriptionId: process.env.NEXT_PUBLIC_PRICE_ID_ELITE_SUB
-        }
+        setupId: process.env.NEXT_PUBLIC_PRICE_ID_ELITE_SETUP,
+        subscriptionId: process.env.NEXT_PUBLIC_PRICE_ID_ELITE_SUB
+      }
       : {
-          setupId: process.env.NEXT_PUBLIC_PRICE_ID_PRO_SETUP,
-          subscriptionId: process.env.NEXT_PUBLIC_PRICE_ID_PRO_SUB
-        };
+        setupId: process.env.NEXT_PUBLIC_PRICE_ID_PRO_SETUP,
+        subscriptionId: process.env.NEXT_PUBLIC_PRICE_ID_PRO_SUB
+      };
 
     try {
       const response = await fetch('/api/create-checkout-session', {
@@ -35,7 +35,7 @@ export default function Pricing() {
       }
 
       const { url } = await response.json();
-      
+
       if (url) {
         window.location.href = url;
       } else {
@@ -69,7 +69,7 @@ export default function Pricing() {
               <li className="flex items-start text-sm"><i className="fas fa-certificate text-indigo-500 mt-1 mr-3"></i> <span>Up to 3 content updates</span></li>
             </ul>
 
-            <button 
+            <button
               onClick={() => handleCheckout('elite')}
               disabled={loading}
               className="block w-full text-center bg-slate-900 text-white py-4 rounded-xl font-bold hover:bg-slate-800 transition disabled:opacity-50"
@@ -92,7 +92,7 @@ export default function Pricing() {
               <li className="flex items-start text-sm"><i className="fas fa-certificate text-indigo-500 mt-1 mr-3"></i> <span>Unlimited content updates</span></li>
             </ul>
 
-            <button 
+            <button
               onClick={() => handleCheckout('pro')}
               disabled={loading}
               className="block w-full text-center bg-slate-900 text-white py-4 rounded-xl font-bold hover:bg-slate-800 transition disabled:opacity-50"
@@ -112,7 +112,7 @@ export default function Pricing() {
               Check our <strong>Student Equity Program</strong> for need-based assistance.
             </p>
           </div>
-          <a 
+          <a
             href="/scholarship"
             className="whitespace-nowrap bg-indigo-600/20 text-indigo-300 border border-indigo-500/50 px-6 py-3 rounded-xl font-bold text-sm hover:bg-indigo-600 hover:text-white transition"
           >
