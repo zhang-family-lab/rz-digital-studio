@@ -102,6 +102,23 @@ export default function Pricing() {
             <p className="text-[10px] text-slate-400 text-center mt-4 uppercase font-bold tracking-tighter">Secure payment via Stripe</p>
           </div>
         </div>
+
+        {/* Student Equity Banner */}
+        <div className="mt-16 bg-slate-800 rounded-2xl p-8 border border-slate-700 flex flex-col md:flex-row items-center justify-between gap-6 max-w-4xl mx-auto">
+          <div className="text-left">
+            <h3 className="text-xl font-bold text-white mb-2">Student Equity Scholarship</h3>
+            <p className="text-slate-400 text-sm">
+              We believe every student deserves a chance to shine, regardless of financial background.
+              Check our <strong>Student Equity Program</strong> for need-based assistance.
+            </p>
+          </div>
+          <a 
+            href="/scholarship"
+            className="whitespace-nowrap bg-indigo-600/20 text-indigo-300 border border-indigo-500/50 px-6 py-3 rounded-xl font-bold text-sm hover:bg-indigo-600 hover:text-white transition"
+          >
+            Apply for Scholarship →
+          </a>
+        </div>
       </div>
     </section>
   );

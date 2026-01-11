@@ -26,8 +26,8 @@ export default function Request() {
 
         <div className="text-center mt-4">
           <p className="text-slate-500 mb-2">Prefer email?</p>
-          <a href="mailto:roger.zhangruizhe@gmail.com" className="text-indigo-600 font-bold hover:underline underline-offset-4">
-            roger.zhangruizhe@gmail.com
+          <a href="mailto:rzdigitalstudio2027@gmail.com" className="text-indigo-600 font-bold hover:underline underline-offset-4">
+            rzdigitalstudio2027@gmail.com
           </a>
         </div>
       </div>
