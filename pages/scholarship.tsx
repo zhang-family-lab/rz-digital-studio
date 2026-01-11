@@ -62,6 +62,10 @@ Sent from website referral
                 <li>Families facing financial hardship or qualifying for school lunch programs.</li>
                 <li>Students with a clear passion for digital projects but limited resources.</li>
               </ul>
+              <div className="mt-6 p-4 bg-indigo-50 border-l-4 border-indigo-400 rounded">
+                <span className="font-bold text-indigo-700">Scholarship Quota:</span>
+                <span className="text-slate-700 ml-2">For every 3 paid projects, 1 scholarship slot is offered.</span>
+              </div>
             </div>
           </div>
           {/* Application Guide (No Form) */}
