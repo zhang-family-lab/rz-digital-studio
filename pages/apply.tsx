@@ -48,14 +48,15 @@ export default function Apply() {
     return (
         <div className="min-h-screen bg-slate-50 font-sans text-slate-900">
             <Head>
-                <title>Student Digital Portfolio Request | RZ Digital Studio</title>
+                <title>Student Digital Portfolio Questionnaire | RZ Digital Studio</title>
             </Head>
 
             <main className="max-w-3xl mx-auto py-12 px-6">
                 <div className="text-center mb-12">
-                    <h1 className="text-4xl font-extrabold tracking-tight mb-4">Student Digital Portfolio Request</h1>
+                    <h1 className="text-4xl font-extrabold tracking-tight mb-4">Student Digital Portfolio Questionnaire</h1>
                     <p className="text-slate-500 max-w-xl mx-auto">
-                        🚀 Submission Success Guide: Building Your Digital Portfolio.
+                        <span className="font-bold">Before you submit, please read our <a href="/blogs/submission-success-guide" target="_blank" rel="noopener noreferrer" className="text-indigo-600 underline">Submission Success Guide</a>!</span><br />
+                        🚀 Submission Success Guide: Building Your Digital Portfolio.<br />
                         To build a world-class digital portfolio, we don't just need your information—we need your best assets.
                     </p>
                 </div>
@@ -69,40 +70,35 @@ export default function Apply() {
                 ) : (
                     <form onSubmit={handleSubmit} className="bg-white p-8 md:p-12 rounded-3xl shadow-sm border border-slate-200 space-y-8">
 
-                        {/* Package Selection */}
-                        <fieldset>
-                            <legend className="block text-sm font-bold text-slate-700 mb-4">Select Package</legend>
-                            <div className="space-y-3">
-                                <label className="flex items-center space-x-3 p-4 border rounded-xl cursor-pointer hover:bg-slate-50 transition">
-                                    <input
-                                        type="radio"
-                                        name="packageSelection"
-                                        value="Student Elite Portfolio (299$ + 29$/mo)"
-                                        checked={formData.packageSelection === 'Student Elite Portfolio (299$ + 29$/mo)'}
-                                        onChange={handleChange}
-                                        className="w-5 h-5 text-indigo-600 focus:ring-indigo-500"
-                                    />
-                                    <div>
-                                        <span className="block font-bold">Student Elite Portfolio</span>
-                                        <span className="block text-sm text-slate-500">$299 + $29/mo</span>
-                                    </div>
-                                </label>
-                                <label className="flex items-center space-x-3 p-4 border rounded-xl cursor-pointer hover:bg-slate-50 transition">
-                                    <input
-                                        type="radio"
-                                        name="packageSelection"
-                                        value="Student Pro Portfolio (499$ + 49$/mo)"
-                                        checked={formData.packageSelection === 'Student Pro Portfolio (499$ + 49$/mo)'}
-                                        onChange={handleChange}
-                                        className="w-5 h-5 text-indigo-600 focus:ring-indigo-500"
-                                    />
-                                    <div>
-                                        <span className="block font-bold">Student Pro Portfolio</span>
-                                        <span className="block text-sm text-slate-500">$499 + $49/mo</span>
-                                    </div>
-                                </label>
+                        {/* Basic Info (moved to top) */}
+                        <div className="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label htmlFor="fullName" className="block text-sm font-bold text-slate-700 mb-2">Full Name *</label>
+                                <input
+                                    type="text"
+                                    id="fullName"
+                                    name="fullName"
+                                    required
+                                    value={formData.fullName}
+                                    onChange={handleChange}
+                                    className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 outline-none transition"
+                                    placeholder="John Doe"
+                                />
                             </div>
-                        </fieldset>
+                            <div>
+                                <label htmlFor="email" className="block text-sm font-bold text-slate-700 mb-2">Email *</label>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    required
+                                    value={formData.email}
+                                    onChange={handleChange}
+                                    className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 outline-none transition"
+                                    placeholder="john@example.com"
+                                />
+                            </div>
+                        </div>
 
                         {/* Identity DNA */}
                         <div>
@@ -195,35 +191,7 @@ export default function Apply() {
 
                         <hr className="border-slate-100" />
 
-                        {/* Basic Info */}
-                        <div className="grid md:grid-cols-2 gap-6">
-                            <div>
-                                <label htmlFor="fullName" className="block text-sm font-bold text-slate-700 mb-2">Full Name *</label>
-                                <input
-                                    type="text"
-                                    id="fullName"
-                                    name="fullName"
-                                    required
-                                    value={formData.fullName}
-                                    onChange={handleChange}
-                                    className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 outline-none transition"
-                                    placeholder="John Doe"
-                                />
-                            </div>
-                            <div>
-                                <label htmlFor="email" className="block text-sm font-bold text-slate-700 mb-2">Email *</label>
-                                <input
-                                    type="email"
-                                    id="email"
-                                    name="email"
-                                    required
-                                    value={formData.email}
-                                    onChange={handleChange}
-                                    className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 outline-none transition"
-                                    placeholder="john@example.com"
-                                />
-                            </div>
-                        </div>
+                        {/* ...existing code... */}
 
                         {/* Additional Details */}
                         <div>

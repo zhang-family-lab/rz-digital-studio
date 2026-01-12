@@ -19,14 +19,24 @@ export async function getStaticProps() {
 
   const filenames = fs.readdirSync(blogsDirectory);
 
+
   const blogs = filenames.map((filename) => {
     const filePath = path.join(blogsDirectory, filename);
     const fileContents = fs.readFileSync(filePath, 'utf8');
     const { data } = matter(fileContents);
 
+    // Ensure date is always a string (ISO format)
+    let dateStr = data.date;
+    if (data.date instanceof Date) {
+      dateStr = data.date.toISOString();
+    } else if (typeof data.date === 'object' && data.date.toString) {
+      dateStr = data.date.toString();
+    }
+
     return {
       id: filename.replace('.md', ''),
       ...data,
+      date: dateStr,
     };
   });
 

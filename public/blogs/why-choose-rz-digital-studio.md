@@ -1,6 +1,6 @@
 ---
 title: "Why RZ Digital Studio is the Best Choice for College Admissions Portfolios"
-author: "Roger Zhang"
+author: "RZ Digital Studio"
 excerpt: "In the competitive world of college admissions, every second of attention counts. While most students struggle to cram their efforts into 150 characters, see why savvy applicants choose RZ Digital Studio to build their personal brand."
 date: "2026-01-08"
 ---
