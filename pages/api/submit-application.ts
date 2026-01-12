@@ -17,7 +17,6 @@ export default async function handler(
     const {
         fullName,
         email,
-        packageSelection,
         identityDNA,
         academicTrends,
         visualEvidenceLink,
@@ -31,33 +30,34 @@ export default async function handler(
         designAesthetic,
     } = req.body;
 
-    if (!process.env.GMAIL_USER || !process.env.GMAIL_PASS) {
-        console.error('Missing Gmail credentials');
+
+    if (!process.env.EMAIL_USER || !process.env.EMAIL_PASS) {
+        console.error('Missing email credentials');
         return res.status(500).json({ success: false, message: 'Server configuration error' });
     }
+
 
     const transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-            user: process.env.GMAIL_USER,
-            pass: process.env.GMAIL_PASS, // Application-specific password recommended
+            user: process.env.EMAIL_USER,
+            pass: process.env.EMAIL_PASS, // Application-specific password recommended
         },
     });
 
-    const mailOptions = {
-        from: process.env.GMAIL_USER,
-        to: 'qzhang03022@gmail.com',
-        subject: `New Portfolio Application from ${fullName}`,
-        html: `
-      <h2>New Student Portfolio Request</h2>
-      <p><strong>Package:</strong> ${packageSelection}</p>
-      <hr />
-      <h3>Contact Info</h3>
-      <p><strong>Name:</strong> ${fullName}</p>
-      <p><strong>Email:</strong> ${email}</p>
-      <p><strong>Major:</strong> ${major}</p>
-      <hr />
-      <h3>Core Narrative</h3>
+        const mailOptions = {
+                from: process.env.EMAIL_USER,
+                to: 'qzhang03022@gmail.com',
+                subject: `New Portfolio Application from ${fullName}`,
+                html: `
+            <h2>New Student Portfolio Request</h2>
+            <hr />
+            <h3>Contact Info</h3>
+            <p><strong>Name:</strong> ${fullName}</p>
+            <p><strong>Email:</strong> ${email}</p>
+            <p><strong>Major:</strong> ${major}</p>
+            <hr />
+            <h3>Core Narrative</h3>
       <p><strong>Identity DNA:</strong> ${identityDNA}</p>
       <p><strong>STAR Narrative (Adversity):</strong><br/>${narrativeBlock}</p>
       <p><strong>Easter Egg:</strong> ${easterEgg}</p>

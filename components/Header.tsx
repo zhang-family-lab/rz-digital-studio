@@ -8,9 +8,6 @@ export default function Header({ hideApplyNow = false }: { hideApplyNow?: boolea
         <Link href="/blogs" className="text-sm font-medium text-slate-600 hover:text-indigo-600 transition">Blogs</Link>
         <Link href="/scholarship" className="text-sm font-medium text-slate-600 hover:text-indigo-600 transition">Scholarship</Link>
       </div>
-      {!hideApplyNow && (
-        <Link href="/apply" className="bg-indigo-600 text-white px-5 py-2 rounded-full text-sm font-bold hover:bg-indigo-700 transition">Apply Now</Link>
-      )}
     </header>
   );
 }

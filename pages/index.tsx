@@ -3,7 +3,6 @@ import Hero from '../components/Hero';
 import HowItWorks from '../components/HowItWorks';
 import Portfolio from '../components/Portfolio';
 import Pricing from '../components/Pricing';
-import TrustedPayments from '../components/TrustedPayments';
 import Footer from '../components/Footer';
 import SeoHead from '../components/SeoHead';
 import Link from 'next/link';
@@ -20,9 +19,11 @@ export default function Home() {
       <HowItWorks />
       <Portfolio />
       <Pricing />
-      <TrustedPayments />
       {/* Move Apply Now button to the end of the main page */}
-      <div className="flex justify-center py-12">
+      <div className="flex flex-col items-center py-12">
+        <p className="mb-4 text-slate-600 text-center max-w-xl">
+          <span className="font-semibold text-indigo-700">No payment required to apply.</span> You will receive a free visual demo of your site before deciding whether to pay. Click "Apply Now" to get started—see your demo first, then decide!
+        </p>
         <Link href="/apply" className="bg-indigo-600 text-white px-8 py-4 rounded-full text-lg font-bold hover:bg-indigo-700 transition shadow-lg">
           Apply Now
         </Link>
