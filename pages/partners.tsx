@@ -353,11 +353,11 @@ export default function Partners() {
                     I am eager to establish a long-term partnership with your agency. We offer one free trial slot for you to test our quality and white-label delivery.
                 </p>
                 <div className="flex flex-col md:flex-row gap-6 justify-center items-center mb-8">
-                    <a href="mailto:roger.zhangruizhe@gmail.com" className="bg-white text-indigo-600 px-6 py-3 rounded-xl font-bold hover:bg-indigo-50 transition flex items-center">
-                        <i className="fas fa-envelope mr-2"></i> roger.zhangruizhe@gmail.com
+                    <a href="mailto:rzdigitalstudio2027@gmail.com" className="bg-white text-indigo-600 px-6 py-3 rounded-xl font-bold hover:bg-indigo-50 transition flex items-center">
+                        <i className="fas fa-envelope mr-2"></i> RZ Digital Studio
                     </a>
-                    <a href="https://rogerzhang.me" target="_blank" rel="noopener noreferrer" className="bg-indigo-700 text-white px-6 py-3 rounded-xl font-bold hover:bg-indigo-800 transition flex items-center border border-indigo-500">
-                        <i className="fas fa-external-link-alt mr-2"></i> Demo: Rogerzhang.me
+                    <a href="https://rz-digital-studio.vercel.app" target="_blank" rel="noopener noreferrer" className="bg-indigo-700 text-white px-6 py-3 rounded-xl font-bold hover:bg-indigo-800 transition flex items-center border border-indigo-500">
+                        <i className="fas fa-external-link-alt mr-2"></i> https://rz-digital-studio.vercel.app
                     </a>
                 </div>
                 <div className="pt-8 border-t border-indigo-500/30 text-xs text-indigo-200">
